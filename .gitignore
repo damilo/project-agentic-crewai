@@ -6,6 +6,9 @@ outputs/
 .vscode/
 .history/
 
+# custom API keys
+.env
+
 #####
 
 # Byte-compiled / optimized / DLL files
