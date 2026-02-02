@@ -1,0 +1,3 @@
+python-dotenv
+crewai[google-genai]==1.8.0
+crewai_tools==1.8.0
