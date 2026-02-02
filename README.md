@@ -16,6 +16,7 @@ Click the button below to launch the entire development environment (including a
 
 ## prerequisites
 requires an API key for Google GenAI to run
+
 Once the Codespace is open, you can:
 1. create a `.env` file in the project folder.
 2. add your key: `GEMINI_API_KEY=your_key_here`
