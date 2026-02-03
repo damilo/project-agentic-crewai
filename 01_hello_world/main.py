@@ -1,12 +1,17 @@
-import os
+import os, sys
+import warnings
 from dotenv import load_dotenv
 
 from crewai import Agent, Task, Crew
 
 def run_demo () -> None:
 
+  # warning control
+  warnings.filterwarnings ('ignore')
+
   # load environment variables
   load_dotenv ()
+  print (f"info # agent API key = {os.getenv ('GEMINI_API_KEY')[:10]}...")
   
   #####
   
