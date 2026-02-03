@@ -10,7 +10,7 @@ from crewai_tools import SerperDevTool, ScrapeWebsiteTool
 import schemas
 
 
-schemas.venue_details
+#schemas.venue_details
 
 def main () -> None:
 
