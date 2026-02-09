@@ -1,0 +1,21 @@
+# definition of tasks
+
+mrn_extraction_task:
+  description: >
+    analysiert eine Frachtbrief-PDF {pdf_path} systematisch und
+    extrahiert alle gefundenen 18-stelligen Master Reference Number (MRN) (Format: YYCountryCodeXXXXXXXXXXXX);
+  expected_output: >
+    eine Liste aller validierten MRNs im Format ['MRN1', 'MRN2'];
+    gibt eine leere Liste zurück [], falls keine MRNs gefunden wurden
+  agent: >
+    zolldokument_analyst
+
+
+email_creation_task:
+  description: >
+    erstellt eine Antwort-E-Mail an den Absender {email_sender_name} unter Referenzierung des Betreffs "{email_subject}";
+    listet die MRNs klar strukturiert im Textkörper auf
+  expected_output: >
+    ein versandfertiger E-Mail-Text
+  agent: >
+    logistik_kommunikator
